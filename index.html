@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="es-AR" data-theme="dark" data-hero="1">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Escaneo automotriz a domicilio en Resistencia | Servicio Escaneo MM</title>
+  <meta name="description" content="Escaneo y diagnóstico electrónico de autos a domicilio en Resistencia, Fontana, Barranqueras, Puerto Tirol, Vilelas y Corrientes. Revisión de usados antes de comprar, con informe en fotos y video." />
+  <meta name="theme-color" content="#1E2B24" />
+  <meta property="og:title" content="Tu auto ya sabe qué le pasa. Nosotros lo leemos." />
+  <meta property="og:description" content="Escaneo automotriz a domicilio en Resistencia, Chaco. Mandá ESCANEO por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/img/portada-bosque-auto.webp" type="image/webp" fetchpriority="high" />
+  <script>
+    // Tema e inicio elegidos, antes de dibujar (sin parpadeo).
+    // ?theme=light|dark compara rápido (no se guarda). ?hero=1|2|3 sí se recuerda.
+    (function () {
+      var d = document.documentElement, q = new URLSearchParams(location.search), t = q.get('theme'), h = q.get('hero');
+      var get = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+      if (t !== 'light' && t !== 'dark') t = get('theme');
+      if (t !== 'light' && t !== 'dark') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if (!/^[123]$/.test(h || '')) h = get('hero');
+      else try { localStorage.setItem('hero', h); } catch (e) {}
+      if (!/^[123]$/.test(h || '')) h = '1';
+      d.dataset.theme = t;
+      d.dataset.hero = h;
+      d.classList.add('js');
+      var m = document.querySelector('meta[name="theme-color"]');
+      if (m) m.content = t === 'light' ? '#EEF1EE' : '#1E2B24';
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Servicio de Escaneo Automotriz MM",
+    "telephone": "+54 9 362 462 4466",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Mac Lean 3500, cs 11",
+      "addressLocality": "Resistencia",
+      "addressRegion": "Chaco",
+      "postalCode": "3500",
+      "addressCountry": "AR"
+    },
+    "areaServed": ["Resistencia", "Fontana", "Barranqueras", "Puerto Tirol", "Vilelas", "Corrientes"],
+    "sameAs": ["https://www.instagram.com/servicioescaneoautomotrizmm/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#portada" aria-label="Servicio de Escaneo Automotriz MM, inicio">
+      <svg class="brand-mark" viewBox="0 0 100 112" aria-hidden="true">
+        <path class="brand-hex" d="M50 5 93 30v52L50 107 7 82V30Z" />
+        <text x="50" y="66" text-anchor="middle">MM</text>
+        <path class="brand-hex" d="M26 80h44" />
+        <circle class="brand-dot" cx="76" cy="80" r="5" />
+      </svg>
+      <span class="brand-txt">ESCANEO AUTOMOTRIZ<small>Diagnóstico computarizado</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#tablero">Testigos</a>
+      <a href="#decodificador">Códigos</a>
+      <a href="#usados">Comprar usado</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <div class="nav-end">
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Cambiar a modo claro">
+        <svg class="ic ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" /><path d="M12 2.5v2.4M12 19.100v2.400M2.500 12h2.400M19.100 12h2.400M5.300 5.300 7 7M17 17l1.700 1.700M5.300 18.700 7 17M17 7l1.700-1.700" /></svg>
+        <svg class="ic ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.200A8.200 8.200 0 0 1 9.800 4a8.200 8.200 0 1 0 10.200 10.200Z" /></svg>
+      </button>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/5493624624466?text=ESCANEO" target="_blank" rel="noopener">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" /></svg><span>WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ PORTADA: foto a pantalla completa, se difumina al bajar ============ -->
+    <section class="cover" id="portada">
+      <div class="cover-media">
+        <img class="cover-img" id="cover-img" src="/img/portada-bosque-auto.webp" width="1170" height="646" fetchpriority="high" decoding="async" alt="Auto negro circulando por una ruta mojada al pie de un bosque de pinos cubierto de niebla." />
+        <div class="cover-shade" aria-hidden="true"></div>
+      </div>
+      <div class="wrap cover-in">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span>Resistencia · Chaco · Vamos a donde estés</p>
+          <h1 class="display hero-title" aria-label="Tu auto ya sabe qué le pasa. Nosotros lo leemos."><span class="w" aria-hidden="true"><span style="--i:0">Tu</span></span> <span class="w" aria-hidden="true"><span style="--i:1">auto</span></span> <span class="w" aria-hidden="true"><span style="--i:2">ya</span></span> <span class="w" aria-hidden="true"><span style="--i:3">sabe</span></span> <span class="w" aria-hidden="true"><span style="--i:4">qué</span></span> <span class="w" aria-hidden="true"><span style="--i:5">le</span></span> <span class="w" aria-hidden="true"><span style="--i:6">pasa.</span></span> <em><span class="w" aria-hidden="true"><span style="--i:7">Nosotros</span></span> <span class="w" aria-hidden="true"><span style="--i:8">lo</span></span> <span class="w" aria-hidden="true"><span style="--i:9">leemos.</span></span></em></h1>
+          <p class="lead hero-lead">Conectamos un escáner profesional a tu auto y te decimos qué falla de verdad, qué revisar y qué no hace falta tocar.</p>
+          <div class="cta-row hero-cta" id="hero-cta">
+            <a class="btn btn-wa btn-lg" href="https://wa.me/5493624624466?text=ESCANEO" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" /></svg><span>Escribinos por WhatsApp</span>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="https://wa.me/5493624624466?text=ESCANEO%20-%20Voy%20a%20comprar%20un%20usado" target="_blank" rel="noopener"><span>Voy a comprar un usado</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 1. INICIO (tres versiones: html[data-hero]) ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-pin">
+        <!-- Versión 2: foto real a pantalla completa -->
+        <div class="hv hv2" aria-hidden="true">
+          <img class="hv2-img" src="/img/10_foto_real_escaner_conectado_ford.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async" />
+          <div class="hv2-shade"></div>
+          <div class="hv2-line"></div>
+          <span class="hv2-tag mono" style="--x:58%;--y:22%;--t:.22">P0303</span>
+          <span class="hv2-tag mono" style="--x:74%;--y:41%;--t:.41">P0201</span>
+          <span class="hv2-tag mono" style="--x:52%;--y:60%;--t:.6">U0100</span>
+          <span class="hv2-tag mono" style="--x:70%;--y:79%;--t:.79">P0420</span>
+          <span class="hv2-cap">Foto real de un escaneo. Los códigos son de ejemplo.</span>
+        </div>
+
+        <div class="wrap hero-in">
+          <!-- Versión 1: pantalla de escaneo (ejemplo) -->
+          <div class="hv hv1" aria-hidden="true">
+            <div class="scan">
+              <div class="scan-top"><span class="scan-live"><i></i>Escaneo en curso</span><span class="scan-ex">Ejemplo</span></div>
+              <ul class="scan-rows">
+                <li class="warn" style="--i:0"><span>Motor</span><b class="mono">P0303</b><i></i></li>
+                <li style="--i:1"><span>Caja</span><b>Sin fallas</b><i></i></li>
+                <li style="--i:2"><span>ABS</span><b>Sin fallas</b><i></i></li>
+                <li style="--i:3"><span>Airbag</span><b>Sin fallas</b><i></i></li>
+                <li class="warn" style="--i:4"><span>Carrocería</span><b class="mono">B1630</b><i></i></li>
+                <li style="--i:5"><span>Red CAN</span><b>Sin fallas</b><i></i></li>
+              </ul>
+              <div class="scan-res">
+                <span class="mono">P0303</span>
+                <strong>Falla de combustión en el cilindro 3</strong>
+                <small>El código indica dónde mirar. La causa se confirma midiendo.</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Versión 3: tablero que se apaga con el scroll -->
+          <div class="hv hv3" id="hv3" aria-hidden="true">
+            <div class="hv3-panel">
+              <svg class="hv3-dials" viewBox="0 0 400 130" fill="none">
+                <path class="hv3-arc" d="M30 120a80 80 0 0 1 160 0" /><path class="hv3-arc" d="M210 120a80 80 0 0 1 160 0" />
+                <path class="hv3-arc hv3-red" d="M172 80a80 80 0 0 1 18 40" /><path class="hv3-arc hv3-red" d="M352 80a80 80 0 0 1 18 40" />
+                <path class="hv3-needle" d="M110 120 62 72" /><path class="hv3-needle" d="M290 120 300 54" />
+                <circle class="hv3-hub" cx="110" cy="120" r="6" /><circle class="hv3-hub" cx="290" cy="120" r="6" />
+                <text x="110" y="104" text-anchor="middle">RPM</text><text x="290" y="104" text-anchor="middle">KM/H</text>
+              </svg>
+              <div class="hv3-lamps">
+                <div class="hv3-lamp amber" style="--at:.14">
+                  <svg viewBox="0 0 36 36"><path d="M9 7h12l4 5h5v12h-5l-3 4H10l-4-5H2V12h4l3-5Zm4-4h8M17 3v4M30 15h3v6" /></svg>
+                  <b class="mono">P0303</b><small>Motor</small>
+                </div>
+                <div class="hv3-lamp amber" style="--at:.38">
+                  <svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="12" /><path d="M3 8a19 19 0 0 0 0 20M33 8a19 19 0 0 1 0 20" /><text x="18" y="21.500" text-anchor="middle">ABS</text></svg>
+                  <b class="mono">C····</b><small>Chasis</small>
+                </div>
+                <div class="hv3-lamp red" style="--at:.62">
+                  <svg viewBox="0 0 36 36"><circle cx="11" cy="7" r="3" /><circle cx="25" cy="16" r="7" /><path d="m9 14 5 8-3 9M5 16v10h13M14 22l6 7" /></svg>
+                  <b class="mono">B····</b><small>Carrocería</small>
+                </div>
+                <div class="hv3-lamp amber" style="--at:.86">
+                  <svg viewBox="0 0 36 36"><path d="m9 17 3-7h13l3 7v9H8v-9Zm1 1h16M11 26v3M25 26v3M7 2q-6 3 0 6M29 2q-6 3 0 6M8 32q4-3 8 0t8 0" /></svg>
+                  <b class="mono">C····</b><small>Chasis</small>
+                </div>
+              </div>
+              <div class="hv3-beam"></div>
+            </div>
+            <p class="hv3-cap"><span class="hv3-hint">Bajá para escanear ↓</span><span class="hv3-done">Los códigos B y C cambian según la marca: se leen con el escáner.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. TABLERO ============ -->
+    <section class="sec" id="tablero" aria-labelledby="tb-h">
+      <div class="wrap cols">
+        <div class="col-text">
+          <p class="eyebrow" data-reveal><span class="dot"></span>El problema</p>
+          <h2 class="display" id="tb-h" data-words>La luz no te dice qué falla</h2>
+          <p class="lead" data-reveal>Te avisa que algo pasa, nada más. Tocá cada testigo para ver qué significa y qué tan urgente es.</p>
+          <div class="truth" data-reveal>
+            <h3>Un código no es un diagnóstico</h3>
+            <p>El código dice qué prueba falló o qué circuito está fuera de rango. No dice qué pieza hay que cambiar.</p>
+            <p><b class="mono code">P0201</b> dice que el circuito del inyector 1 está abierto. La causa puede ser el inyector, el cable, la ficha, el fusible o la computadora.</p>
+            <p>El escaneo indica dónde mirar y el técnico confirma la causa con mediciones. Por eso escanear antes de cambiar piezas ahorra plata.</p>
+          </div>
+        </div>
+        <div class="col-main" id="tablero-root" data-reveal></div>
+      </div>
+    </section>
+
+    <!-- ============ 3. DECODIFICADOR ============ -->
+    <section class="sec" id="decodificador" aria-labelledby="dec-h">
+      <div class="wrap">
+        <div class="cols cols-dec">
+          <div class="col-text">
+            <p class="eyebrow" data-reveal><span class="dot"></span>Decodificador</p>
+            <h2 class="display" id="dec-h" data-words>¿Te salió un código? Escribilo</h2>
+            <p class="lead" data-reveal>Una letra y cuatro caracteres. Lo desarmamos y te contamos qué significa cada parte.</p>
+            <form class="dec-form" id="dec-form" autocomplete="off" data-reveal>
+              <label class="sr" for="dec-input">Código de falla</label>
+              <input id="dec-input" class="dec-input mono" inputmode="text" size="5" maxlength="5" placeholder="P0303" value="P0303" spellcheck="false" autocapitalize="characters" />
+              <button class="btn btn-solid" type="submit"><span>Decodificar</span></button>
+            </form>
+            <div class="chips" id="dec-chips" aria-label="Códigos de ejemplo" data-reveal></div>
+          </div>
+          <div class="col-main dec-out" id="dec-out" aria-live="polite" data-reveal></div>
+        </div>
+
+        <div class="reals" data-reveal>
+          <h3 class="kicker">Escaneos reales</h3>
+          <div class="reals-row">
+            <figure class="shot">
+              <img src="/img/11_captura_real_codigos_inyectores.jpg" width="1599" height="899" loading="lazy" decoding="async" alt="Captura real del software de diagnóstico con los códigos P0141, P0201, P0202, P0203, P0204 y P0303 confirmados, y P0532 pendiente." />
+              <figcaption>Cuatro inyectores con circuito abierto a la vez. Cuando fallan los cuatro juntos, lo común es algo compartido.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="/img/12_captura_real_codigos_carroceria_red.jpg" width="1599" height="899" loading="lazy" decoding="async" alt="Captura real con los códigos de carrocería B1630, B162C y B1644, y el código de red U0100." />
+              <figcaption>Códigos de carrocería y de red. Un lector básico de motor no los ve.</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="/img/13_captura_real_codigos_pendientes.jpg" width="1599" height="899" loading="lazy" decoding="async" alt="Captura real con dos listas: códigos confirmados y códigos pendientes, con P0129 y P0118 en ambas." />
+              <figcaption>Las dos listas del estándar: confirmados y pendientes.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. COMPRA DE USADO ============ -->
+    <section class="sec" id="usados" aria-labelledby="us-h">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" data-reveal><span class="dot"></span>Compra de usado</p>
+          <h2 class="display" id="us-h" data-words>Por fuera impecable. ¿Y lo que no se ve?</h2>
+          <p class="lead" data-reveal>Antes de señar, lo escaneamos. Vemos fallas guardadas, fallas pendientes y si borraron códigos hace poco.</p>
+        </div>
+        <div class="cols cols-used">
+          <div class="monitors" id="monitors" data-reveal></div>
+          <div class="checklist" data-reveal>
+            <h3>Qué revisamos antes de que compres</h3>
+            <ol class="check">
+              <li>Todos los módulos, no solo el motor: códigos confirmados, pendientes y permanentes.</li>
+              <li>Monitores de preparación y, si el auto lo informa, la distancia y el tiempo desde el último borrado.</li>
+              <li>Datos en vivo en marcha: temperatura, ajustes de combustible, sensores de oxígeno, carga de batería.</li>
+              <li>El VIN que guarda la computadora contra el de los papeles y el chasis.</li>
+              <li>Motor, frenos, suspensión, amortiguadores, neumáticos, puertas y estado general.</li>
+              <li>Informe completo con fotos y videos. Ves lo mismo que vio el técnico.</li>
+            </ol>
+            <a class="btn btn-wa" href="https://wa.me/5493624624466?text=ESCANEO%20-%20Voy%20a%20comprar%20un%20usado" target="_blank" rel="noopener">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" /></svg><span>Quiero revisar un usado</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. PREGUNTAS ============ -->
+    <section class="sec" id="faq" aria-labelledby="faq-h">
+      <div class="wrap cols cols-faq">
+        <div class="col-text">
+          <p class="eyebrow" data-reveal><span class="dot"></span>Preguntas frecuentes</p>
+          <h2 class="display" id="faq-h" data-words>Lo que siempre nos preguntan</h2>
+        </div>
+        <div class="faq" data-reveal>
+          <details open><summary>¿Qué es un escaneo automotriz?</summary><p>Es conectar un equipo de diagnóstico al conector OBD de tu auto para leer las fallas que guardaron sus computadoras, ver datos de los sensores en vivo y saber qué está fallando de verdad antes de cambiar piezas.</p></details>
+          <details><summary>¿Cuánto sale?</summary><p>Depende de tu auto y de dónde estés. Mandanos marca y modelo por WhatsApp y te cotizamos al toque.</p></details>
+          <details><summary>Si borro el código, ¿se arregla?</summary><p>No. Borrar el código apaga la luz, pero no arregla la causa. Si la falla sigue, vuelve a aparecer. Además, el borrado queda en evidencia en los monitores del auto.</p></details>
+          <details><summary>¿Van a domicilio?</summary><p>Sí, en Resistencia, Fontana, Barranqueras, Puerto Tirol, Vilelas y Corrientes.</p></details>
+          <details><summary>Vivo en otra provincia y encontré un auto en Chaco o Corrientes.</summary><p>Lo revisamos por vos y te mandamos un informe con fotos y videos antes de que viajes.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. CIERRE ============ -->
+    <section class="sec closing on-dark" id="contacto" aria-labelledby="ci-h">
+      <div class="wrap closing-in">
+        <h2 class="display closing-title" id="ci-h" data-words>¿Se te prendió una luz? <em>Mandá ESCANEO.</em></h2>
+        <a class="btn btn-wa btn-xl" data-reveal href="https://wa.me/5493624624466?text=ESCANEO" target="_blank" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" /></svg><span>362 462 4466</span>
+        </a>
+        <p class="how" data-reveal><b>1</b> Nos escribís con marca, modelo y año <span aria-hidden="true">→</span> <b>2</b> Vamos o venís <span aria-hidden="true">→</span> <b>3</b> Te explicamos qué tiene</p>
+        <dl class="info" data-reveal>
+          <div><dt>Dirección</dt><dd>Av. Mac Lean 3500, cs 11<br />Resistencia, Chaco (CP 3500)</dd></div>
+          <div><dt>Zonas a domicilio</dt><dd><ul class="pills"><li>Resistencia</li><li>Fontana</li><li>Barranqueras</li><li>Puerto Tirol</li><li>Vilelas</li><li>Corrientes</li></ul></dd></div>
+          <div><dt>Medios de pago</dt><dd>Visa, Mastercard, American Express y Cabal, crédito y débito</dd></div>
+          <div><dt>Horario</dt><dd>Lunes a domingo, en el horario que te quede más cómodo</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>Servicio de Escaneo Automotriz MM · Resistencia, Chaco</span>
+      <a href="https://www.instagram.com/servicioescaneoautomotrizmm/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <a class="fab" id="fab" href="https://wa.me/5493624624466?text=ESCANEO" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" /></svg>
+  </a>
+
+  <!-- Indicador de secciones: marca en cuál estás y se mueve con el scroll. -->
+  <nav class="secnav" id="secnav" aria-label="Secciones de la página">
+    <span class="secnav-name" id="secnav-name" aria-hidden="true">Inicio</span>
+    <a href="#portada" data-name="Inicio" aria-label="1: Inicio">1</a>
+    <a href="#tablero" data-name="Testigos" aria-label="2: Testigos">2</a>
+    <a href="#decodificador" data-name="Códigos" aria-label="3: Códigos">3</a>
+    <a href="#usados" data-name="Comprar usado" aria-label="4: Comprar usado">4</a>
+    <a href="#faq" data-name="Preguntas" aria-label="5: Preguntas">5</a>
+    <a href="#contacto" data-name="Contacto" aria-label="6: Contacto">6</a>
+  </nav>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.200 8.200 0 0 1-4.200-1.150l-.3-.18-3 .78.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200Zm4.500-6.100c-.25-.12-1.460-.720-1.690-.800-.230-.080-.390-.120-.560.120-.160.250-.640.800-.780.970-.140.160-.290.180-.530.060a6.700 6.700 0 0 1-1.980-1.220 7.400 7.400 0 0 1-1.370-1.700c-.140-.250 0-.380.110-.500.110-.110.250-.290.370-.430.120-.140.160-.250.250-.410.080-.160.040-.310-.020-.430-.060-.120-.560-1.340-.760-1.840-.200-.480-.410-.420-.560-.420h-.480c-.160 0-.430.060-.660.310-.230.250-.860.840-.860 2.050s.880 2.380 1 2.540c.120.160 1.740 2.650 4.210 3.720.590.250 1.050.400 1.400.520.590.190 1.130.160 1.550.100.470-.070 1.460-.600 1.670-1.170.200-.580.200-1.070.140-1.170-.060-.110-.220-.170-.470-.290Z"/></symbol>
+  </svg>
+
+  <script type="module" src="/src/boot.js"></script>
+</body>
+</html>

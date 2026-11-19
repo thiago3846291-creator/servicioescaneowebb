@@ -1,0 +1,47 @@
+{
+  "ejemplos": ["P0303", "P0201", "U0100", "P0420", "P0171", "B1630"],
+  "sistemas": {
+    "P": { "nombre": "Motor y transmisión", "en": "Powertrain" },
+    "B": { "nombre": "Carrocería", "en": "Body" },
+    "C": { "nombre": "Chasis", "en": "Chassis" },
+    "U": { "nombre": "Red de comunicación", "en": "Network" }
+  },
+  "origen": {
+    "0": "Genérico: significa lo mismo en todas las marcas",
+    "1": "Específico del fabricante: cambia según la marca",
+    "2": "Mixto: depende del rango",
+    "3": "Mixto: depende del rango"
+  },
+  "subsistemasP0": {
+    "1": "Medición de aire y combustible",
+    "2": "Aire y combustible: circuito de inyectores",
+    "3": "Encendido y fallas de combustión",
+    "4": "Controles de emisiones (EGR, EVAP, catalizador)",
+    "5": "Velocidad, ralentí y entradas auxiliares",
+    "6": "Computadora y circuitos de salida",
+    "7": "Transmisión",
+    "8": "Transmisión",
+    "9": "Transmisión"
+  },
+  "codigos": [
+    { "codigos": ["P0300"], "significado": "Fallas de combustión en varios cilindros", "causas": ["Bujías", "Bobinas", "Combustible", "Entradas de aire", "Compresión"] },
+    { "codigos": ["P0301", "P0302", "P0303", "P0304", "P0305", "P0306"], "significado": "Falla de combustión en el cilindro {n}", "causas": ["Bujía de ese cilindro", "Bobina o cable de ese cilindro", "Inyector", "Compresión"] },
+    { "codigos": ["P0171", "P0174"], "significado": "Mezcla pobre", "detalle": { "P0171": "bancada 1", "P0174": "bancada 2" }, "causas": ["Entrada de aire", "Sensor MAF sucio", "Baja presión de combustible"] },
+    { "codigos": ["P0172", "P0175"], "significado": "Mezcla rica", "detalle": { "P0172": "bancada 1", "P0175": "bancada 2" }, "causas": ["Inyector que gotea", "Sensor MAF", "Presión de combustible alta"] },
+    { "codigos": ["P0101"], "significado": "Rango o rendimiento del sensor MAF", "causas": ["MAF sucio o dañado", "Entrada de aire"] },
+    { "codigos": ["P0113"], "significado": "Circuito alto del sensor de temperatura del aire de admisión", "causas": ["Sensor", "Ficha", "Cableado"] },
+    { "codigos": ["P0117", "P0118"], "significado": "Circuito del sensor de temperatura del refrigerante", "detalle": { "P0117": "señal baja", "P0118": "señal alta" }, "causas": ["Sensor", "Ficha", "Cableado"] },
+    { "codigos": ["P0128"], "significado": "Temperatura del refrigerante por debajo de la del termostato", "causas": ["Termostato abierto", "Sensor"] },
+    { "codigos": ["P0129"], "significado": "Presión barométrica demasiado baja", "causas": ["Sensor barométrico o MAP", "Cableado"] },
+    { "codigos": ["P0135", "P0141"], "significado": "Circuito del calefactor del sensor de oxígeno", "detalle": { "P0135": "antes del catalizador", "P0141": "después del catalizador" }, "causas": ["Sensor de oxígeno", "Fusible", "Cableado"] },
+    { "codigos": ["P0201", "P0202", "P0203", "P0204"], "significado": "Circuito del inyector {n} abierto", "causas": ["Inyector", "Cable o ficha", "Fusible o relé de alimentación", "Computadora"], "nota": "Si fallan los cuatro inyectores juntos, lo común es algo compartido: fusible o relé de alimentación, ficha o mazo, o la computadora." },
+    { "codigos": ["P0335"], "significado": "Sensor de posición del cigüeñal", "causas": ["Sensor", "Cableado", "Rueda fónica"] },
+    { "codigos": ["P0340"], "significado": "Sensor de posición del árbol de levas", "causas": ["Sensor", "Cableado", "Distribución"] },
+    { "codigos": ["P0420"], "significado": "Eficiencia del catalizador por debajo del umbral", "causas": ["Catalizador gastado", "Sensor de oxígeno", "Fallas de combustión previas"] },
+    { "codigos": ["P0442", "P0455"], "significado": "Pérdida en el sistema de vapores de combustible (EVAP)", "detalle": { "P0442": "pérdida chica", "P0455": "pérdida grande" }, "causas": ["Tapa de tanque mal cerrada", "Mangueras", "Válvulas"] },
+    { "codigos": ["P0500"], "significado": "Sensor de velocidad del vehículo", "causas": ["Sensor", "Cableado", "A veces, el ABS"] },
+    { "codigos": ["P0532"], "significado": "Sensor de presión del aire acondicionado, señal baja", "causas": ["Poco gas", "Sensor", "Cableado"] },
+    { "codigos": ["U0100"], "significado": "Se perdió la comunicación con la computadora del motor", "causas": ["Batería débil", "Masas flojas o sulfatadas", "Fusibles", "Fichas", "Red CAN"], "nota": "La computadora rota es lo menos común." },
+    { "prefijo": "B16", "significado": "Código de carrocería", "causas": ["Lámparas", "Fichas", "Módulo de carrocería"], "nota": "En nuestros escaneos reales, los B16xx fueron luces bajas, luz de cruce e indicador trasero. Su significado exacto depende de la marca." }
+  ]
+}
